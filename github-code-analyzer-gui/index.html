@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Code Analyzer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>GitHub Code Analyzer</h1>
+  <div>
+    <label for="username">GitHub Username:</label>
+    <input type="text" id="username" placeholder="Enter GitHub Username">
+  </div>
+  <div>
+    <label for="repository">Repository Name:</label>
+    <input type="text" id="repository" placeholder="Enter Repository Name">
+  </div>
+  <div>
+    <label for="errorType">Error Type:</label>
+    <input type="text" id="errorType" placeholder="Enter Error Type (e.g., UnusedImports)">
+  </div>
+  <button id="runButton">Run Analysis</button>
+  <button id="stopButton">Stop Analysis</button>
+  <pre id="output"></pre>
+  <div>
+    <progress id="progressBar" value="0" max="100"></progress>
+    <div id="progressText">Progress: 0% | ETA: --s</div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
